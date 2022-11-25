@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Search</title>
+        <style>
+            body{
+                font-size: 10pt;
+                background-color: rgba(170, 59, 8, 0.801);
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0px;
+                left: 0px;
+                margin: 0px;
+                border-top :0px; 
+            }
+            p{
+                margin-top: 0;
+                font-size: 13pt;
+            }
+            .topview{
+                display: block;
+                background-color: white;
+                
+                margin: 0px;
+                border: 0px;
+                padding-block: 1%;
+                padding-left: 30px;
+                width: 100%;
+            }
+            .card{
+                background-color: aquamarine;
+                margin-inline : 123px;
+                margin-top: 30px;
+                border-radius: 10px;
+            }
+            .cardtitle{
+                display: flex;
+                align-items: center;
+                justify-content:space-between;
+            }
+            .cardinside{
+                display: flex;
+                flex-direction: column;
+            }
+            .comname{
+                align-items: left;
+
+            }
+            .comphone{
+                justify-content: right;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="topview">
+            <h2 style="display:inline;"> 搜尋結果  共___</h2>
+            <h2 style="display:inline;">筆</h2>
+
+        </div>
+        <div class="card">
+            <div class="cardtitle">
+                <h1 class="comname">OOOO股份有限公司</h1>
+                <h2 class="comphone" style="justify-content:right">0900-000-000</h2> 
+            </div>
+
+            <div  class="cardinside">
+                <p>地址:</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="cardtitle">
+                <h1 class="comname">OOOO股份有限公司</h1>
+                <h2 class="comphone" style="justify-content:right">0900-000-000</h2> 
+            </div>
+
+            <div  class="cardinside">
+                <p>地址:</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="cardtitle">
+                <h1 class="comname">OOOO股份有限公司</h1>
+                <h2 class="comphone" style="justify-content:right">0900-000-000</h2> 
+            </div>
+
+            <div  class="cardinside">
+                <p>地址:</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="cardtitle">
+                <h1 class="comname">OOOO股份有限公司</h1>
+                <h2 class="comphone" style="justify-content:right">0900-000-000</h2> 
+            </div>
+
+            <div  class="cardinside">
+                <p>地址:</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="cardtitle">
+                <h1 class="comname">OOOO股份有限公司</h1>
+                <h2 class="comphone" style="justify-content:right">0900-000-000</h2> 
+            </div>
+
+            <div  class="cardinside">
+                <p>地址:</p>
+            </div>
+        </div>
+    </body>
+</html>
