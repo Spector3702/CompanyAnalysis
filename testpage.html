@@ -1,28 +1,27 @@
-<!DOCTYPE html>
+<!DOCTYPE html>     <!--這裡是註解文字，只會在 HTML code 裡看到，不會出現在畫面 -->
 <html>
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8">      <!--設定網頁字形編碼-->
         <title>Home</title>
-        <style>
+        <style> /* 這裡是註解文字，只會在 css code 裡看到，不會出現在畫面 */
             .center{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: 750px;
-                
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+                display: flex;    /*將網頁排版設為FLEX*/ 
+                position: fixed;    /*使用固定定位*/           
+                align-items: center;        /*對齊交錯軸線(x軸)中央*/
+                /*justify-content: center;        /*對齊主軸線(Y軸)中央*/
+                height: 1%;      /*設定容器高度*/
+                top: 50%;       /*設定x軸在正中*/
+                left: 50%;      /*設定y軸在正中*/
+                transform: translate(-50%, -50%);       /*將div正中間對齊中心*/
             }
             
         </style>
     </head>
     <body>
-        <div class="center">
-            <form name="form1" method="get" action="testpage2.php">
-                <input type="text" placeholder="Search" name="search" aria-label="Search" required>
-                <input type="submit" value="Search" name="submit"></input>
+        <div class="center">            <!--將此div的class設為center-->
+            <form name="form1" method="get" action="testpage2.php">         <!--設定網頁字形編碼-->
+                <input type="text" placeholder="Search" name="search" aria-label="Search" required>         <!--設定網頁字形編碼-->
+                <input type="submit" value="Search" name="submit">      <!--設定網頁字形編碼-->
             </form>
         </div>
     </body>
