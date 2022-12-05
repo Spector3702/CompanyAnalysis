@@ -70,7 +70,6 @@
                     </div>
                     ";
 
-                // get num of results stored in database
                 $sql = "SELECT * FROM tainan_104 WHERE 公司名稱 LIKE '%$search%'";
                 $getquery = mysqli_query($con, $sql);
 
