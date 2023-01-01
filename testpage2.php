@@ -85,7 +85,7 @@
     
                         <div  class=\"cardinside\">
                             <div class=\"comaddress\">地址: ". $runrows["地址"] ."</div>
-                        </div>
+                        </div> 
                     </div>
                     ";
                 
