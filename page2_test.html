@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Search</title>
+        <style>
+            body{
+                font-size: 10pt;        /*設定字體大小*/
+                background-color:rgba(202, 171, 171, 0.459);      /*設定背景顏色*/
+                width: 100%;        /*寬度100%*/
+                margin: 0px;        /*將body的margin設為0*/
+            }
+            .comaddress{
+                margin-top: 0;      /*將上方margin設為0*/
+                font-size: 13pt;        /*字體大小*/
+            }
+            .topview{       /*頂欄*/     
+                background-color:  rgba(170, 59, 8, 0.801);/*想到再換顏色*/
+                padding-block: 1%;      /*四邊padding設為1%*/
+                padding-left: 30px;     /*左邊留空白比較好看*/
+            }
+            .card{      /*每個公司的區塊*/
+                background-color: rgb(255, 255, 255);       /*背景顏色*/
+                margin-inline : 125px;      /*寬度*/
+                margin-top: 30px;       /*與上一個的間隔*/
+                padding: 10px;      /*內出血*/
+                padding-top: 0px;       /*上方出血*/
+                border-radius: 10px;        /*圓角半徑*/
+                box-shadow: 10px 10px 13px rgba(0, 0, 0, 0.5);
+            }
+            .cardtitle{     /*標題*/
+                display: flex;      /*用flex模式排列*/
+                align-items: center;        /*對齊X軸*/
+                justify-content:space-between;      /*平均分配寬度，第一項和最後一項貼齊邊緣*/
+            }
+            .cardinside{        /*內文*/
+                /*display: flex;*/      /*還沒放其他東西所以沒有排列*/
+                flex-direction: column;     /*用column排*/
+            }
+            .comname{          /*公司名稱*/
+                align-items: left;      /*靠左對齊*/
+
+            }
+            .comphone{      /*公司電話*/
+                align-items: right;     /*靠右對齊*/     
+            }
+        </style>
+    </head>
+    <body>
+        <div class="topview">     
+            <h2 style="display:inline;"> 搜尋結果  共</h2>
+            <h2 style="display:inline;">筆</h2>
+        </div>
+        <div class="card">
+            <div class="cardtitle">
+                <h1 class="comname">". $runrows['公司名稱'] . " </h1>
+                <h2 class="comphone" style="justify-content:right">". $runrows["電話"] ."</h2> 
+            </div>
+
+            <div  class="cardinside">
+                <div class="comaddress">地址: ". $runrows["地址"] ."</div>
+            </div> 
+        </div>
+                
+         
+            
+            
+    </body>
+</html>
