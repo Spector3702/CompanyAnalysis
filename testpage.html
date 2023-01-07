@@ -14,10 +14,30 @@
                 left: 50%;      /*設定y軸在正中*/
                 transform: translate(-50%, -50%);       /*將div正中間對齊中心*/
             }
+
+            .bg {
+                position: fixed;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                z-index: -999;
+                
+            }
+
+            .bg img {
+                filter:blur(2px); /* 模糊效果 */
+                min-height: 100%;
+                width: 100%;
+            }
             
         </style>
     </head>
     <body>
+        <div class="bg">
+            <img src="background.png">
+        </div>
+
         <div class="center">            <!--將此div的class設為center-->
             <form name="form1" method="get" action="testpage2.php">         <!--HTML 的 form, request 設定成get, 並跳到testpage2.php-->
                 <input type="text" placeholder="Search" name="search" aria-label="Search" required>         <!--search 變數 (文字)-->
