@@ -39,6 +39,7 @@
             }
             .cardinside{        /*內文*/
                 /*display: flex;*/      /*還沒放其他東西所以沒有排列*/
+                display: none;
                 flex-direction: column;     /*用column排*/
             }
             .comname{          /*公司名稱*/
@@ -49,6 +50,7 @@
                 align-items: right;     /*靠右對齊*/     
             }
         </style>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     </head>
     <body>
         <?php
@@ -82,13 +84,13 @@
                 //   $buyLink = $runrows["URL"];
                 //   $imageLink = $runrows["IMAGE_URL"];
                 echo "
-                    <div class=\"card\">
+                    <div class=\"card\" id=\"card\">
                         <div class=\"cardtitle\">
                             <h1 class=\"comname\">". $runrows['公司名稱'] . " </h1>
                             <h2 class=\"comphone\" style=\"justify-content:right\">". $runrows["電話"] ."</h2> 
                         </div>
     
-                        <div  class=\"cardinside\">
+                        <div  class=\"cardinside\" id=\"cardinside\">
                             <div class=\"comaddress\">地址: ". $runrows["地址"] ."</div>
                         </div> 
                     </div>
@@ -110,5 +112,12 @@
 
             mysqli_close($con);
         ?>
+        <script>
+            $(document).ready(function(){
+                $("#card").click(function(){
+                    $("#cardinside").slideToggle(500);
+                });
+            })
+        </script>
     </body>
 </html>

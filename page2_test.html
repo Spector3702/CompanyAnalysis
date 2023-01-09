@@ -21,7 +21,7 @@
                 color: white;
             }
             .card{      /*每個公司的區塊*/
-                background-color: rgb(255, 255, 255);        /*背景顏色*/
+                background-color: rgb(255, 255, 255);         /*背景顏色*/
                 margin-inline : 125px;      /*寬度*/
                 margin-top: 30px;       /*與上一個的間隔*/
                 padding: 10px;      /*內出血*/
@@ -49,24 +49,32 @@
                 align-items: right;     /*靠右對齊*/     
             }
         </style>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     </head>
     <body>
         <div class="topview">     
             <h2 style="display:inline;"> 搜尋結果  共</h2>
             <h2 style="display:inline;">筆</h2>
         </div>
-        <div class="card">
+        <div class="card" id="card">
             <div class="cardtitle">
                 <h1 class="comname">". $runrows['公司名稱'] . " </h1>
                 <h2 class="comphone" style="justify-content:right">". $runrows["電話"] ."</h2> 
             </div>
 
-            <div  class="cardinside">
+            <div  class="cardinside" id="cardinside">
                 <div class="comaddress">地址: ". $runrows["地址"] ."</div>
             </div> 
         </div>
                 
-        
+        <script>
+            $(document).ready(function(){
+                $("#card").click(function(){
+                    $("#cardinside").slideToggle(500);
+                });
+            })
+        </script>
+         
             
             
     </body>
