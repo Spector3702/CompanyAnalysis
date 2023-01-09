@@ -31,17 +31,16 @@
             }
 
             .bg {
+                transform: translate(-50%, -50%);       /*將div正中間對齊中心*/
                 position: fixed;
-                top: 100px;
-                left: 500px;
-                bottom: 550px;
-                right: 500px;
+                top: 15%;
+                left: 50%;
                 z-index: 1;
                 
             }
 
             .bg img {
-                min-height: 100%;
+                min-height: 10%;
                 width: 100%;
             }
             
@@ -55,11 +54,12 @@
                     <input type="submit" value="Search" name="submit">      <!--submit 變數 (提交按鈕)-->
                 </form>
             </div>
+            <div class="bg">
+                <img src="求職檢察官.png">
+            </div>
         </div>
 
-        <div class="bg">
-            <img src="求職檢察官.png">
-        </div>
+        
         
     </body>
 </html>
